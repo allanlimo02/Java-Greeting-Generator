@@ -1,0 +1,36 @@
+{{#block "header"}}
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>{{#block "title"}}Hello Friend!{{/block}}
+</title>
+   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+ </head>
+ <body>
+{{/block}}
+{{#block "header"}}
+
+{{/block}}
+   <!-- begin inner template-->
+   <div class="container">
+        {{#block "content"}}
+        {{/block}}
+
+   </div>
+   <!-- end inner template-->
+{{#block "footer"}}
+<div class="row bg-danger text-success h-45">
+    <div class="col-md-3">
+        <h2>Welcome to Java </h2>
+    </div>
+    <div class="col-md-3">This is Footer</div>
+    <div class="col-md-6">
+    <a href="/form"><button class="btn btn-success">Form</button></a>
+
+    <a href="/greeting_card"><button class="btn btn-info">Greetings</button></a>
+    </div>
+</div>
+ </body>
+</html>
+{{/block}}
